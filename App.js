@@ -7,10 +7,11 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Perfil/>
-      <Text>Nombre: Daniel Wilfredo Granados Hernandez</Text>
-      <Text>Carnet: GH161659</Text>
-      <Text>Hobies: </Text>
-      <Text>Algo: </Text>
+
+       <Text style={styles.texto}>Universidad Don Bosco</Text>
+      <Text style={styles.texto}>Diseño y Programación de Software Multiplataforma</Text>
+      <Text style={styles.texto}>Alumno: Daniel Wilfredo Granados Hernandez</Text>
+      <Text style={styles.texto}>Carnet: GH161659</Text> 
       <StatusBar style="auto" />
     </View>
   );
@@ -23,6 +24,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#7e7e7e',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
+  texto: {
+    color:'#fff',
+    textAlign: 'center',
+    margin: 2
+  }
+  ,
 });
