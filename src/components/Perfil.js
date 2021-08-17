@@ -5,21 +5,24 @@ const Perfil = () => {
     return (  
         <>
         <View style={stylesView.container}>
-            <Image 
+           <View style={stylesHelp.container}> 
+           <Image 
            style={stylesImg.container}
             source={require('../../assets/pp.jpg')}
             />
+           </View>
+            
             <Text style={stylesPerfil.container}>
-                Daniel Granados
+                Daniel Granados 
             </Text>
             <Text style={stylesTextoCentrado.container}>
-               <strong>Hobbies: </strong> Algunos de mis actividades preferidas son, jugar Futbol, escuchar musica,
+               Hobbies:  Algunos de mis actividades preferidas son, jugar Futbol, escuchar musica,
                me gusta mucho ver series y peliculas, tambien me gusta mucho aprender sobre nuevas tecnologias para
                el desarrollo de aplicaciones web y ahora que estoy aprendiendo a hacer aplicaciones moviles. 
             </Text>
             
             <Text style={stylesTextoCentrado.container}>
-               <strong>Lenguajes de Programación: </strong> Uno de mis lenguajes de programación favoritos es Javascript, ya que este
+               Lenguajes de Programación:  Uno de mis lenguajes de programación favoritos es Javascript, ya que este
                es un lenguaje que puede ser utilizado tanto para el desarrollo de aplicaciones web como moviles, y es de los lenguajes de programación
                con los que estoy un poco mas familiarizado, ya que es uno que utilizo con más frecuencia que otros como c#, Java, entre otros.
             </Text>
@@ -33,9 +36,20 @@ const Perfil = () => {
 
 //para la imagen
 
+const stylesHelp = StyleSheet.create({
+    container: {
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    logo: {
+      width: 300,
+      height: 400,
+    },
+  });
+
 const stylesImg = StyleSheet.create({
     container: {
-        display:'block',
+      display: 'flex',
         margin:'auto',
       alignItems: 'center',
       justifyContent: 'center',
@@ -49,14 +63,14 @@ const stylesPerfil = StyleSheet.create({
     container: {
       color: '#000',
       fontSize:30,
-      fontWeight:500,
+      fontWeight:'500',
       textAlign:'center'
     },
   });
   const stylesView = StyleSheet.create({
     container: {
       backgroundColor: '#fff',
-      border: 'solid',
+      borderStyle: 'solid',
       padding:10,
       margin:10,
       borderRadius:15,
@@ -68,7 +82,7 @@ const stylesPerfil = StyleSheet.create({
     container: {
       color: '#000',
       fontSize:15,
-      fontWeight:400,
+      fontWeight:'400',
       textAlign:'justify',
       marginBottom:10
     },
